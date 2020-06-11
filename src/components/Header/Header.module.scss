@@ -1,0 +1,94 @@
+.Header {
+  height: 50px;
+  background-color: #f3ead9;
+  border-bottom: 1px solid #808080;
+
+  .Wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    border-bottom: 2px solid #eeede8;
+    box-sizing: border-box;
+
+    .Logo {
+      width: 100px;
+      margin-top: 10px;
+    }
+
+    .NavButtons {
+      width: 30%;
+      min-width: 300px;
+      height: 100%;
+      margin: 0;
+
+      .NavButtons {
+        position: relative;
+        top: -5px;
+        min-width: 90px;
+        height: 110%;
+        margin: 0;
+        color: #382110;
+        font-size: 0.5em;
+        background-color: #f3ead9;
+        border: none;
+        border-radius: 0;
+
+        &:hover {
+          color: #ffffff;
+          background-color: #382110;
+        }
+      }
+    }
+
+    .ProfileButtons {
+      display: flex;
+      justify-content: flex-end;
+      width: 20%;
+      height: 100%;
+
+      .Profile {
+        height: 105%;
+        padding: 0 5px;
+        cursor: pointer;
+        box-sizing: border-box;
+
+        .User {
+          width: 35px;
+          height: 35px;
+          margin-top: 10px;
+          border: 1px solid #d3d3d3;
+          border-radius: 50%;
+          box-sizing: border-box;
+        }
+
+        &:hover {
+          background-color: #382110;
+
+          .User {
+            border: 1px solid #382110;
+          }
+        }
+      }
+
+      .LogoutButton {
+        height: 105%;
+        padding: 5px 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+
+        .Logout {
+          width: 25px;
+        }
+
+        &:hover {
+          padding: 5px 10px;
+          background-color: #382110;
+        }
+      }
+    }
+  }
+}

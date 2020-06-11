@@ -1,0 +1,15 @@
+.Wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 20px auto;
+
+  .List {
+    width: 80%;
+    padding: 10px 20px;
+    background-color: #f3ead9;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+}

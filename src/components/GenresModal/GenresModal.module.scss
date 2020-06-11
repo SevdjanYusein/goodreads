@@ -1,0 +1,68 @@
+.ModalWindow {
+  .ModalClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    line-height: 50px;
+    color: #aaaaaa;
+    font-size: 80%;
+    text-align: center;
+    text-decoration: none;
+    
+    &:hover {
+      color: #000000;
+      cursor: pointer;
+    }
+  }
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(#f3ead9, 0.66);
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.3s;
+
+  & > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    height: 62%;
+    overflow: auto;
+    padding: 1.5em;
+    color: #333333;
+    background: #ffffff;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+  }
+  
+  h1 {
+    margin: 0 0 15px;
+    padding-bottom: 5px;
+    color: #333333;
+    font-size: 1.3em;
+    border-bottom: 1px solid #808080;
+  }
+  
+  .CheckList {
+    column-count: 3;
+    
+    .ModalCheckBox {
+      display: inline-block;
+      width: 100%;
+      margin: 3px;
+    }
+  }
+  
+  .SubmitButton {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+}

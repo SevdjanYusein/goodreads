@@ -1,0 +1,61 @@
+.Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #f3ead9;
+  border-radius: 10px;
+
+  .ImageBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+    margin-bottom: 20px;
+
+    .Button {
+      display: block;
+      width: 50%;
+      height: 40px;
+      margin: 10px auto;
+      color: #ffffff;
+      cursor: pointer;
+      background-color: #409d69;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .InfoBox {
+      display: inline-block;
+      width: 50%;
+      margin: 2%;
+    }
+  }
+
+  .BookDescription {
+    margin: 40px;
+    margin-top: 0;
+  }
+
+  .ErrorMessage {
+    color: #ff0000;
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Wrapper {
+    width: 95%;
+    
+    .ImageBox {
+      margin: 0;
+      margin-top: 20px;
+      
+      .InfoBox{
+        width: auto;
+        margin: 30px;
+      }
+    }
+  }
+}

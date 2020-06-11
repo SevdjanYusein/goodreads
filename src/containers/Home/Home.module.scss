@@ -1,0 +1,29 @@
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+
+  @media screen and (max-width: 1200px) {
+    width: 95%;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.List {
+  @media screen and (max-width: 900px) {
+    margin: 0 auto;
+    width: 95%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 370px) {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,98 @@
+.Background {
+  width: 100%;
+  height: 500px;
+  background-image: url("../../assets/images/background-book.jpg");
+  background-position: 50% 90%;
+  background-size: cover;
+}
+
+.Register {
+  position: absolute;
+  left: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-top: 10%;
+
+  @media screen and (max-width: 1070px) {
+    width: 36%;
+    top: 10%;
+  }
+
+  @media screen and (max-width: 900px) {
+    top: 15%;
+    left: 10%;
+    width: 50%;
+  }
+
+  @media screen and (max-width: 600px) {
+    position: static;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 0 8px;
+  }
+
+  @media screen and (max-width: 370px) {
+    width: 80%;
+  }
+
+  .RegisterParagraph {
+    color: #5e1b17;
+    font-size: 1.3em;
+    align-content: center;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    outline-color: #b1b196;
+  }
+
+  .SignUpButton {
+    width: 70px;
+    margin: 5px;
+  }
+}
+
+.ErrorMessage {
+  display: inline-block;
+  visibility: hidden;
+  margin: 0 10px;
+  color: #ff0000;
+  font-size: 0.8em;
+
+  &.Visible {
+    visibility: visible;
+  }
+}
+
+.BackgroundWords {
+  position: absolute;
+  left: 30%;
+  width: 30%;
+  margin-top: 2%;
+
+  @media screen and (max-width: 1200px) {
+    width: 30%;
+    margin-top: 3%;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 40%;
+    margin-top: 4%;
+  }
+
+  @media screen and (max-width: 600px) {
+    position: static;
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    padding: 37px 0 10px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 80%;
+  }
+}

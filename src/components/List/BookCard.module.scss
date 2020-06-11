@@ -1,0 +1,55 @@
+.Book {
+  display: inline-block;
+  width: 160px;
+  height: 300px;
+  overflow: hidden;
+  margin: 10px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+
+  .ImgBox {
+    width: 140px;
+    height: 190px;
+    margin: 10px;
+    outline: none;
+
+    .BookCover {
+      width: 140px;
+      height: 190px;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    &:hover {
+      box-shadow: 0 0 2px 1px rgba(#008cba, 0.5);
+      outline: none;
+    }
+  }
+
+  .Title,
+  .BookInfo {
+    margin: 5px auto;
+    padding: 0 10px;
+    color: #382110;
+    font-size: 0.8em;
+  }
+
+  .LinkToBookDetails {
+    color: #382110;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      outline: none;
+    }
+  }
+}
+
+.Container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
